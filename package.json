@@ -1,0 +1,23 @@
+{
+  "name": "toppack-angular",
+  "version": "1.0.0",
+  "description": "Front End for toppack learning project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunilKumar7/toppack-angular.git"
+  },
+  "keywords": [
+    "angular",
+    "js"
+  ],
+  "author": "sunil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SunilKumar7/toppack-angular/issues"
+  },
+  "homepage": "https://github.com/SunilKumar7/toppack-angular#readme"
+}
