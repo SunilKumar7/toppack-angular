@@ -1,3 +1,5 @@
-<div ng-controller="RepositoryController as Repository">
-				{{Repository.name}}
+<div ng-controller="RepositoryController as repository">
+	<!-- Add search bar here..-->
+				<input type="text" ng-model="repository.name" ng-change="repository.fetchRepositories()" placeholder="Type Something?"/>
+				<div ng-repeat="x in repository.responseData">{{x.repo_name}} - {{x.owner_name}} - {{x.repo_url}} - <button ng-click="repository.importPackages(x.owner_name, x.repo_name)">IMPORT</button></div>
 </div>

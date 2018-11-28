@@ -1,7 +1,7 @@
 <html>
 		<body ng-app="toppack">
-			<div ng-controller="TopPackBaseController as baseController">
-					<a href="#repositories">{{baseController.a}}</a>
+			<div ng-controller="TopPackBaseController as BaseController">
+					<a href="#!/repositories">{{BaseController.repository}}</a>
 					<div class="ng-view"></div>
 			</div>
 		</body>
@@ -9,5 +9,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
 		<script src="index.js"></script>
 		<script src="./app/components/repository/repository.js"></script>
-
+		<script src="./app/services/repository_factory.js"></script>
+		<script src="./app/services/package_factory.js"></script>
 </html>

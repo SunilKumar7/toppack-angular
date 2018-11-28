@@ -2,16 +2,16 @@ angular.module("toppack", ['ngRoute'])
 							.config(function($routeProvider){
 									$routeProvider.when("/repositories",
 											{
-													templateUrl: "./app/components/repository/repository.html",
-													controller: "RepositoryController"
+												templateUrl: "./app/components/repository/repository.html",
 											}
-									);
+									)
+									.otherwise({
+										redirectTo: '/'
+									});
 							})
 							.controller('TopPackBaseController', BaseController);
 
 function BaseController() {
 	var viewModel = this;
-	viewModel.a = "Repositories";
-	viewModel.b = "Top Packages";
-	
+	viewModel.repository = "Repositories";
 }
